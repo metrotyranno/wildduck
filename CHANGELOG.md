@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.50.1](https://github.com/zone-eu/wildduck/compare/v1.50.0...v1.50.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* **api-list-unsubscribe:** fix list-unsubscribe header parser for get message endpoints ([#1146](https://github.com/zone-eu/wildduck/issues/1146)) ([30d3894](https://github.com/zone-eu/wildduck/commit/30d38942ff065181df743904f02029869c9977b1))
+* **prometheus:** ZMS-93: Add prometheus as separate service so it is separate from general API ([#1151](https://github.com/zone-eu/wildduck/issues/1151)) ([1a6d3ca](https://github.com/zone-eu/wildduck/commit/1a6d3caad73248e58ec6f3c8b02bd8167c6b9acf))
+
 ## [1.50.0](https://github.com/zone-eu/wildduck/compare/v1.49.6...v1.50.0) (2026-08-19)
 
 
