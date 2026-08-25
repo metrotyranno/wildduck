@@ -52,6 +52,7 @@ const pushsubscriptionsRoutes = require('./lib/api/pushsubscriptions');
 const settingsRoutes = require('./lib/api/settings');
 const healthRoutes = require('./lib/api/health');
 const mcpTokensRoutes = require('./lib/api/mcp-tokens');
+const aclRoutes = require('./lib/api/acl');
 const { SettingsHandler } = require('./lib/settings-handler');
 const McpTokenHandler = require('./lib/mcp-token-handler');
 const roles = require('./lib/roles');
@@ -801,6 +802,10 @@ module.exports = done => {
     settingsRoutes(db, server, settingsHandler);
     healthRoutes(db, server, loggelf);
     mcpTokensRoutes(server, mcpTokenHandler);
+
+    if (config.imap.acl && config.imap.acl.enabled) {
+        aclRoutes(db, server);
+    }
 
     if (process.env.NODE_ENV === 'test') {
         server.get(
