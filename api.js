@@ -805,7 +805,7 @@ module.exports = done => {
     mcpTokensRoutes(server, mcpTokenHandler);
 
     if (config.imap.acl && config.imap.acl.enabled) {
-        aclRoutes(db, server);
+        aclRoutes(db, server, notifier, loggelf);
         domaingroupsRoutes(db, server);
     }
 
