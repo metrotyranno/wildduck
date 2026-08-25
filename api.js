@@ -53,6 +53,7 @@ const settingsRoutes = require('./lib/api/settings');
 const healthRoutes = require('./lib/api/health');
 const mcpTokensRoutes = require('./lib/api/mcp-tokens');
 const aclRoutes = require('./lib/api/acl');
+const domaingroupsRoutes = require('./lib/api/domaingroups');
 const { SettingsHandler } = require('./lib/settings-handler');
 const McpTokenHandler = require('./lib/mcp-token-handler');
 const roles = require('./lib/roles');
@@ -805,6 +806,7 @@ module.exports = done => {
 
     if (config.imap.acl && config.imap.acl.enabled) {
         aclRoutes(db, server);
+        domaingroupsRoutes(db, server);
     }
 
     if (process.env.NODE_ENV === 'test') {
