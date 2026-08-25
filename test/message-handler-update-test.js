@@ -89,6 +89,9 @@ describe('MessageHandler message updates', function () {
                 notified.push(...entries);
                 return callback();
             },
+            fireForMailbox() {
+                fires++;
+            },
             fire() {
                 fires++;
             }

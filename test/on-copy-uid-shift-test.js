@@ -169,7 +169,8 @@ describe('on-copy UID arrays', function () {
                         return cb();
                     }
                 },
-                fire() {}
+                fire() {},
+                fireForMailbox() {}
             }
         };
 
@@ -307,7 +308,8 @@ describe('on-copy UID arrays', function () {
                         return cb();
                     }
                 },
-                fire() {}
+                fire() {},
+                fireForMailbox() {}
             }
         };
 
@@ -629,7 +631,8 @@ describe('on-copy UID arrays', function () {
                         return cb();
                     }
                 },
-                fire() {}
+                fire() {},
+                fireForMailbox() {}
             }
         };
 

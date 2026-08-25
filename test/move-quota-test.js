@@ -88,7 +88,8 @@ describe('moveAsync - encrypted-MOVE quota adjustment', function () {
                     return cb();
                 }
             },
-            fire: () => {}
+            fire: () => {},
+            fireForMailbox: () => {}
         };
         handler.indexer = { getMaildata: () => ({ attachments: [], magic: 'new-magic' }) };
         handler.attachmentStorage = {
@@ -278,7 +279,8 @@ describe('moveAsync - encrypted-MOVE quota adjustment', function () {
                     return cb();
                 }
             },
-            fire: () => {}
+            fire: () => {},
+            fireForMailbox: () => {}
         };
 
         handler.indexer = {
