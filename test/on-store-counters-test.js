@@ -82,7 +82,8 @@ describe('on-store counter notifications', () => {
                     notification = entries[0];
                     callback();
                 },
-                fire() {}
+                fire() {},
+                fireForMailbox() {}
             }
         };
         const session = {
@@ -183,7 +184,8 @@ describe('on-store counter notifications', () => {
                     notification = entries[0];
                     callback();
                 },
-                fire() {}
+                fire() {},
+                fireForMailbox() {}
             }
         };
         const session = {

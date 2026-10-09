@@ -433,7 +433,8 @@ describe('moveAsync label counter notifications', function () {
                 target.push(...entries);
                 callback();
             },
-            fire() {}
+            fire() {},
+            fireForMailbox() {}
         };
 
         await handler.moveAsync({
